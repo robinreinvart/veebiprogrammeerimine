@@ -4,8 +4,26 @@
   $hourNow = date("H");
   $partOfDay = "hägune aeg";
   if($hourNow < 8){
-	$partOfDay = "varane hommik";  
-  }
+	$partOfDay = "varane hommik";
+	}
+	if($hourNow >= 8 and $hourNow < 10) {
+	$partOfDay = "hommik";
+	}
+	if($hourNow >= 10 and $hourNow < 13) {
+	$partOfDay = "ilus lõuna";
+	}
+	if($hourNow > 13){
+	$partOfDay = "pärastlõuna";
+	}
+	if($hourNow > 17){
+	$partOfDay = "õhtu";
+	}
+	if($hourNow > 21){
+	$partOfDay = "hiline õhtu";
+	}
+	if($hourNow >= 4 and $hourNow < 8) {
+	$partOfDay = "öö";
+	}
 ?>
 
 <!DOCTYPE html>
